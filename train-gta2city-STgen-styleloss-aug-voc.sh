@@ -6,7 +6,7 @@ nvidia-docker run -it \
   -v `pwd`/out-gtaSim10k2city-STgen-4convlayer-fcnstyleloss-voc-4epoch:/root/out \
   -v `pwd`/mean-images:/root/data \
   sensor-transfer-tf-docker \
-  python3 main_STgen_fcnstyleloss_4convlayers_voc_orig.py \
+  python3 main_STgen_fcnstyleloss_voc_orig.py \
     --data_dir_synth /root/dataset_synth \
     --data_dir_real /root/dataset_real \
     --data_slug_synth gta_sim10k_voc_crop \

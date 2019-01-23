@@ -1,12 +1,13 @@
 # SensorEffectTransferNetwork
 This is the public git repo for the paper "Sensor Transfer: Learning Optimal Sensor Effect Image Augmentation for Sim-to-Real Domain Adaptation"
 
-## Installation
+## Requirements and Installation
 This code base uses Docker. To install docker, please use the following: [https://docs.docker.com/install/]
 To build the Docker Image, cd into the sensor transfer folder and run the following in the terminal:
 
 `docker build -t sensor-transfer-tf-docker . `
 
+There are also a good number of high quality docker tutorials provided on the docker website if you would like further reading.
 
 You will also need to download the network weights into pretrained/tensorflow-vgg/ folder. You can download these weights (`vgg16.npy`) from [https://github.com/machrisaa/tensorflow-vgg]
 
@@ -34,3 +35,5 @@ nvidia-docker run -it \
     --learning_rate 2e-5 \
     --gpu 2,3 
 ```
+
+The first two docker volumes map in the real and synthetic datasets. 

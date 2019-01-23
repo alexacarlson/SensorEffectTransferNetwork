@@ -1,6 +1,6 @@
 
 import tensorflow as tf
-from model_STgen_fcnstyleloss_4convlayers_voc_orig import STnet
+from model_STgen_fcnstyleloss_voc_orig import STnet
 import os
 #from cityscapes_dataset import CityscapesDataset
 #from gta_dataset import GTADataset
